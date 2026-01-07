@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<title>AG Platform | Pitch Deck</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root {
+  --blue-dark: #050b1e;
+  --blue-rich: #0a1a3a;
+  --blue-glossy: radial-gradient(circle at top, #102a5e, #050b1e 70%);
+  --gold: linear-gradient(135deg, #f5d27a, #c9a44a, #f5d27a);
+  --text-light: #e9ecf1;
+  --text-muted: #aab0c2;
+  --glass: rgba(255,255,255,0.08);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--blue-glossy);
+  color: var(--text-light);
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+  padding: 100px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  background: var(--gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 900px;
+  line-height: 1.8;
+}
+
+ul {
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+li {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.card {
+  background: var(--glass);
+  border-radius: 24px;
+  padding: 40px;
+  margin-top: 40px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.highlight {
+  font-size: 1.4rem;
+  margin-top: 30px;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+</style>
+</head>
+
+<body>
+
+<!-- Slide 1 -->
+<section>
+  <h1>AG Platform</h1>
+  <h2>Multi-Tenant Commerce SaaS</h2>
+  <p>حوّل أي متجر أونلاين لنظام تجارة Enterprise في دقائق</p>
+</section>
+
+<!-- Slide 2 -->
+<section>
+  <h1>المشكلة</h1>
+  <div class="card">
+    <ul>
+      <li>أنظمة تقيلة ومعقدة</li>
+      <li>اعتماد كامل على مطورين</li>
+      <li>مشاكل أمان وتسريب بيانات</li>
+      <li>صعوبة التوسع مع نمو البيزنس</li>
+      <li>حلول أجنبية غالية ومقفولة</li>
+    </ul>
+    <p class="highlight">النتيجة: التاجر بيضيع وقته في التقنية بدل البيع</p>
+  </div>
+</section>
+
+<!-- Slide 3 -->
+<section>
+  <h1>الحل</h1>
+  <p>
+    AG Platform منصة تجارة إلكترونية SaaS متعددة العملاء،
+    بتقدم Features Enterprise بدون أي تعقيد تقني.
+  </p>
+</section>
+
+<!-- Slide 4 -->
+<section>
+  <h1>القيمة الأساسية</h1>
+  <div class="grid">
+    <div class="card">
+      <h2>للتاجر</h2>
+      <ul>
+        <li>Inventory & Orders</li>
+        <li>CRM</li>
+        <li>Analytics</li>
+        <li>Email Campaigns</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>للمنصة</h2>
+      <ul>
+        <li>Data Isolation</li>
+        <li>Centralized Updates</li>
+        <li>Security by Design</li>
+        <li>Observability</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 5 -->
+<section>
+  <h1>ليه AG Platform؟</h1>
+  <p>
+    دي مش Website Builder  
+    ولا Plugin  
+    ولا Monolithic App
+  </p>
+  <p class="highlight">دي Commerce Operating System</p>
+</section>
+
+<!-- Slide 6 -->
+<section>
+  <h1>Multi-Tenancy Engine</h1>
+  <div class="card">
+    <ul>
+      <li>Shared Database</li>
+      <li>Tenant Isolation بـ tenant_id</li>
+      <li>Hibernate Filters</li>
+      <li>ThreadLocal Context</li>
+    </ul>
+    <p class="highlight">مستحيل يحصل Data Leakage</p>
+  </div>
+</section>
+
+<!-- Slide 7 -->
+<section>
+  <h1>Market Opportunity</h1>
+  <ul>
+    <li>متاجر صغيرة ومتوسطة</li>
+    <li>Brands محلية</li>
+    <li>Agencies و White-Label</li>
+  </ul>
+</section>
+
+<!-- Slide 8 -->
+<section>
+  <h1>Business Model</h1>
+  <div class="card">
+    <ul>
+      <li>Subscription Plans</li>
+      <li>Add-ons (Analytics, Campaigns)</li>
+      <li>White-Label Licensing</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Slide 9 -->
+<section>
+  <h1>Product Intelligence</h1>
+  <p>
+    المنصة مش Store  
+    دي Decision Engine
+  </p>
+  <ul>
+    <li>Most Viewed vs Most Sold</li>
+    <li>Conversion Gaps</li>
+    <li>Sales Heatmaps</li>
+  </ul>
+</section>
+
+<!-- Slide 10 -->
+<section>
+  <h1>الرؤية</h1>
+  <p class="highlight">
+    نبني منصة أي تاجر يبدأ بيها  
+    وأي بيزنس يكبر عليها  
+    من غير ما يغير سيستم
+  </p>
+</section>
+
+<footer>
+  AG Platform © Enterprise Commerce Infrastructure
+</footer>
+
+</body>
+</html>
